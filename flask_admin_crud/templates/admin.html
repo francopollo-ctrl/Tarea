@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="row">
+  <div class="col-md-12">
+    <div class="card mb-4">
+      <div class="card-body">
+        <h2>Bienvenido, {{ session.user_name }}</h2>
+        <p>Este es el panel de administración. Desde aquí puedes gestionar los usuarios.</p>
+        <a class="btn btn-success" href="{{ url_for('users_list') }}">Ver lista de usuarios</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
